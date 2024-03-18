@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đỗ Gia Huy-PS26598</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Giỏ mua hàng -->
+    <div class="p-5">
+        <h4 class="text-center fw-bold fs-2">Giỏ mua hàng</h4>
+        <table class="table table-borderless ">
+            <thead>
+                <tr style="border-bottom: 1px solid gray;">
+                    <th scope="col" width="70%">Sản Phẩm</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col"></th>
+                    <th scope="col">Tổng</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in giohang track by $index">
+                    <th scope="row">
+                        <div class="card mb-3" style="max-width: 540px; background-color: black; color: white;">
+                            <div class="row g-0">
+                                <div class="col-md-2">
+                                    <!-- <img src="img/1-2_2_540x.webp" class="img-fluid rounded-start" alt="..."> -->
+                                    <img src="img/{{item.hinh[0]}}" class="img-thumbnail" alt="" style=" max-width: 95%;">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+
+                                        <p class="card-text">{{item.ten}}</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <td>{{item.gia | currency : 'đ' : 0}}</td>
+                    <td class="d-flex"> <input type="number" min="1" ng-model="item.soluong" class="form-control"
+                            id="inputNumber" placeholder="Số lượng" style="width: 100%; color: black;" ></td>
+                    <td><button class="btn btn-danger" ng-click="xoa(item.id)">Xoa</button></td>
+                    <td>{{item.soluong * item.gia | currency : 'đ' : 0}}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                    <tr>
+                        <th  scope="col" width="70%">Tong thanh tien</th>
+                        <th>{{tinhTongtien() | currency : 'đ' : 0}}</th>
+                        <th><button class="btn btn-danger" ng-click="xoahet()">Xoa het</button></th>
+                    </tr>
+                </tfoot>
+        </table>
+    </div>
+    <!-- ghi chú -->
+    <div class="p-5">
+        <form action="" class="text-center mx-auto" style="width: 400px;">
+
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Thêm ghi chú vào đơn hàng của bạn</label>
+                <textarea class="form-control  bg-black text-white" placeholder="Note" id="formGroupExampleInput2"
+                    style="height: 100px"></textarea>
+            </div>
+            <p>Đã bao gồm thuế. Phí vận chuyển được tính khi thanh toán.</p>
+            <button type="button" class="btn btn-light btn-lg">Thanh Toán</button>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/6689c10aee.js" crossorigin="anonymous"></script>
+
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

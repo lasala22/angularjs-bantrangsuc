@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đỗ Gia Huy-PS26598</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+        
+        <!-- slider -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="img/banner_fansi_VN_1950x.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="img/banner_web_32947063-9a9b-4c0b-a6dc-8fae483cc3c4.webp" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="img/vietdevils_desktop-1950x866_1950x.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Danh mục sản phẩm -->
+        <div class="p-5">
+            <h1>DANH MỤC SẢN PHẨM</h1>
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <div class="card text-bg-dark text-center border-0 card-danhmuc">
+                        <img src="img/nhan-danh_muc_872f4470-5b3a-495b-a928-aee932b4d764_460x.webp" class="card-img"
+                            alt="...">
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h1 class="card-text">NHẪN BẠC S925 <br>
+                                <a href="#" class="btn btn btn-light btn-lg d-none">XEM THÊM</a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card text-bg-dark text-center border-0 card-danhmuc">
+                        <img src="img/day_chuyen-danh_muc-2_7eca08af-df06-4c0c-b57a-c0dc3a29d88d_460x.webp"
+                            class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h1 class="card-text">DÂY CHUYỀN BẠC S925 <br>
+                                <a href="#" class="btn btn btn-light btn-lg d-none">XEM THÊM</a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card text-bg-dark text-center border-0 card-danhmuc">
+                        <img src="img/khuyen_tai-danh_muc_ffdb6d94-6ed5-45da-b092-14d482d4e848_460x.webp"
+                            class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h1 class="card-text">KHUYÊN TAI BẠC S925 <br>
+                                <a href="#" class="btn btn btn-light btn-lg d-none">XEM THÊM</a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card text-bg-dark text-center border-0 card-danhmuc">
+                        <img src="img/vong_tay-danh_muc-2_9c8e061e-80c9-49b0-ae72-6f112b7dde38_460x.jpg"
+                            class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h1 class="card-text">VÒNG TAY BẠC NAM S925 <br>
+                                <a href="#" class="btn btn btn-light btn-lg d-none">XEM THÊM</a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Detail -->
+        <div class="row p-5 ">
+            <div class="col-md-8">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active  ">
+                            <div class="justify-content-center align-items-center d-flex">
+                                <img src="img/{{dsSP[0].hinh[0]}}" alt="..."
+                                    width="40%" class="px-1">
+                                <img src="img/{{dsSP[0].hinh[1]}}" alt="..." width="40%" class="px-1">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="justify-content-center align-items-center  d-flex ">
+                                <img src="img/{{dsSP[0].hinh[2]}}" alt="..." width="40%" class="px-1">
+                                <img src="img/{{dsSP[0].hinh[3]}}" alt="..." width="40%" class="px-1">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4 overflow-y-scroll" style="height: 500px;">
+                <a href="#" style="text-decoration: none; color: grey;">Heliosjewels.vn</a>
+                <h3>{{dsSP[0].ten}}</h3>
+                <h3>{{dsSP[0].gia | number : 0}}<sup>đ</sup></h3>
+                <h5 class="pt-2">Cỡ</h5>
+                <div class="d-flex">
+                    <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                        href="#">
+                        Size 18cm
+                    </a>
+                    <a class="ms-4 link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                        href="#">
+                        Size 20cm
+                    </a>
+
+                </div>
+                <form class="row mt-3">
+                    <div class="col-md-3">
+                        <input type="number" min="1" value="1" class="form-control" id="inputNumber"
+                            placeholder="Số lượng" ng-model="dsSP[0].quantity">
+                    </div>
+                    <div class="col-md-9">
+                        <button type="submit" class="btn btn-light mb-3 " ng-click="mua(dsSP[0])">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+                </form>
+                <p>
+                    Tên sản phẩm: Vòng tay bạc S925 Angel Silver Helios Silver Original
+                    <br><br>
+                    Chất liệu: Bạc S925
+                    <br><br>
+                    Loại đá sử dụng: Không
+                    <br><br>
+                    Thương hiệu: HELIOS
+                    <br><br>
+                    Bảo hành: Theo chính sách bảo hành và nhận đánh sáng sản phẩm trọn đời
+                    <br><br>
+                    Câu chuyện từ nhà thiết kế: Từ hàng ngàn năm về trước, hình ảnh thiên sứ đã gắn liền với trí
+                    tưởng
+                    tượng và đức tin của nhân loại.
+                    <br><br>
+                    Trong Kinh Thánh, họ được mô tả như sứ giả của Thượng Đế, là những người mang thông điệp quan
+                    trọng
+                    từ thiên đàng xuống trái đất.
+                    <br><br>
+                    Thiên sứ thường mang hình hài đứa trẻ, với đôi cánh trắng muốt tượng trưng cho sự thuần khiết và
+                    tốt
+                    lành.
+                    <br><br>
+                    Không chỉ thể hiện sự kết nối giữa con người và thần thánh, họ còn là hiện thân cho sự chỉ đường
+                    dẫn
+                    lối trên hành trình cuộc sống.
+                    <br><br>
+                    Khi con người mất phương hướng hay bị thách thức bởi những cám dỗ, thiên sứ sẽ xuất hiện, dùng
+                    ánh
+                    hào quang để gợi ý con đường đi đến sự tốt đẹp.
+                    <br><br>
+                    Cảm hứng từ đó, Helios tạo nên vòng tay Angel, với ý nghĩa nó sẽ luôn định hướng người đàn ông
+                    tới
+                    những giá trị cao quý.
+                    <br><br>
+                    Xem chi tiết sản phẩm
+                </p>
+            </div>
+        </div>
+        <!-- Helios meets -->
+        <div class="p-5">
+            <h1>HELIOS MEETS</h1>
+            <div id="carouselBlog" class="carousel slide">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active  ">
+                        <div class="justify-content-center align-items-center d-flex">
+                            <div class="card text-bg-dark me-5" style="width: 30rem;">
+                                <img src="img/Blog7.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">HELIOS X BLOGGER THANH HẬU</h5>
+
+                                </div>
+                            </div>
+                            <div class="card text-bg-dark" style="width: 30rem;">
+                                <img src="img/Blog1.webp " class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">HELIOS X BLOGGER PHAN UYÊN NHI</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="justify-content-center align-items-center d-flex">
+                            <div class="card text-bg-dark me-5" style="width: 30rem;">
+                                <img src="img/Blog3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">HELIOS X BLOGGER XUAN CA</h5>
+
+                                </div>
+                            </div>
+                            <div class="card text-bg-dark" style="width: 30rem;">
+                                <img src="img/Blog4.jpg " class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">HELIOS X BLOGGER MIE NGUYEN</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item  ">
+                        <div class="justify-content-center align-items-center d-flex">
+                            <div class="card text-bg-dark me-5" style="width: 30rem;">
+                                <img src="img/Blog5.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">HELIOS X BLOGGER ĐỖ NGỌC HƯNG</h5>
+
+                                </div>
+                            </div>
+                            <div class="card text-bg-dark" style="width: 30rem;">
+                                <img src="img/Blog6.webp " class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">HELIOS X BLOGGER CREATOR NAYANGGX</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBlog"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBlog"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+       
+   
+
+
+
+    <script src="https://kit.fontawesome.com/6689c10aee.js" crossorigin="anonymous"></script>
+
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="helios.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+[
+    {
+        "id": 1,
+        "ten": "Vòng Tay Bạc S925 Angel",
+        "gia": 1050000,
+        "hinh": ["sp1_1.jpg", "sp1_2.webp","sp1_3.jpg","sp1_4.webp"],
+        "quantity" : 1
+    },
+    {
+        "id": 2,
+        "ten": "Mặt Dây Chuyền Bạc S925",
+        "gia": 999000,
+        "hinh": ["sp2_1.webp","sp2_2.jpg","sp2_3.jpg","sp2_4.webp"],
+        "quantity" : 1
+    },
+    {
+        "id": 3,
+        "ten": "Icon set",
+        "gia": 199000,
+        "hinh": ["sp3_1.webp","sp3_2.webp","sp3_3.jpg","sp3_4.webp"],
+        "quantity" : 1
+    },
+    {
+        "id": 1,
+        "ten": "Vòng Tay Bạc S925 Angel",
+        "gia": 1050000,
+        "hinh": ["sp1_1.jpg","sp1_2.webp","sp1_3.jpg","sp1_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 2,
+        "ten": "Mặt Dây Chuyền Bạc S925",
+        "gia": 999000,
+        "hinh": ["sp2_1.webp","sp2_2.jpg","sp2_3.jpg","sp2_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 3,
+        "ten": "Icon set",
+        "gia": 199000,
+        "hinh": ["sp3_1.webp","sp3_2.webp","sp3_3.jpg","sp3_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 4,
+        "ten": "Nhẫn Bạc S925 Rome Helios Original",
+        "gia": 985000,
+        "hinh": ["sp7_1.webp","sp7_2.webp","sp7_3.webp","sp7_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 5,
+        "ten": "Vòng tay kim loại Helios Twisted",
+        "gia": 295000,
+        "hinh": ["sp8_1.webp","sp8_2.webp","sp8_3.webp","sp8_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 6,
+        "ten": "Vòng tay kim loại Helios Belt",
+        "gia": 345000,
+        "hinh": ["sp9_1.webp","sp9_2.webp","sp9_3.webp","sp9_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 4,
+        "ten": "Nhẫn Bạc S925 Rome Helios Original",
+        "gia": 985000,
+        "hinh": ["sp7_1.webp","sp7_2.webp","sp7_3.webp","sp7_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 5,
+        "ten": "Vòng tay kim loại Helios Twisted",
+        "gia": 295000,
+        "hinh": ["sp8_1.webp","sp8_2.webp","sp8_3.webp","sp8_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 6,
+        "ten": "Vòng tay kim loại Helios Belt",
+        "gia": 345000,
+        "hinh": ["sp9_1.webp","sp9_2.webp","sp9_3.webp","sp9_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 7,
+        "ten": "Nhẫn thời trang nam nữ Helios Fin Stone",
+        "gia": 245000,
+        "hinh": ["sp10_1.webp","sp10_2.webp","sp10_3.webp","sp10_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 8,
+        "ten": "Vòng tay kim loại Helios Chain Black",
+        "gia": 295000,
+        "hinh": ["sp11_1.webp","sp11_2.webp","sp11_3.webp","sp11_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 9,
+        "ten": "Dây chuyền nam, nữ Helios Owl X",
+        "gia": 295000,
+        "hinh": ["sp12_1.webp","sp12_2.webp","sp12_3.webp","sp12_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 7,
+        "ten": "Nhẫn thời trang nam nữ Helios Fin Stone",
+        "gia": 245000,
+        "hinh": ["sp10_1.webp","sp10_2.webp","sp10_3.webp","sp10_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 8,
+        "ten": "Vòng tay kim loại Helios Chain Black",
+        "gia": 295000,
+        "hinh": ["sp11_1.webp","sp11_2.webp","sp11_3.webp","sp11_4.webp"],"quantity" : 1
+    },
+    {
+        "id": 9,
+        "ten": "Dây chuyền nam, nữ Helios Owl X",
+        "gia": 295000,
+        "hinh": ["sp12_1.webp","sp12_2.webp","sp12_3.webp","sp12_4.webp"],"quantity" : 1
+    }
+]

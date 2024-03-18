@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đỗ Gia Huy-PS26598</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container-fluid text-white" style="background-color: black;">    
+        <!-- Detail -->
+        <div class="row p-5 ">
+            <div class="col-md-8">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active  ">
+                            <div class="justify-content-center align-items-center d-flex">
+                                <img src="img/{{sanpham.hinh[0]}}" alt="..."
+                                    width="40%" class="px-1">
+                                <img src="img/{{sanpham.hinh[1]}}" alt="..." width="40%" class="px-1">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="justify-content-center align-items-center  d-flex ">
+                                <img src="img/{{sanpham.hinh[2]}}" alt="..." width="40%" class="px-1">
+                                <img src="img/{{sanpham.hinh[3]}}" alt="..." width="40%" class="px-1">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div>
+                    <p>Ảnh sản phẩm:</p>
+                    <div class="d-flex justify-content-center">
+                        <img ng-repeat="hinhnen in sanpham.hinh" src="img/{{hinhnen}}" class="img-thumbnail mx-2" alt="" style="height: 150px; max-width: 95%;">
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="col-md-4 overflow-y-scroll" style="height: 500px;">
+                <a href="#" style="text-decoration: none; color: grey;">Heliosjewels.vn</a>
+                <h3>{{sanpham.ten}}</h3>
+                <h3>{{sanpham.gia | number : 0}} <sup>đ</sup></h3>
+                <h5 class="pt-2">Cỡ</h5>
+                <!-- modal -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Hướng dẫn đo size
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog  modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: black;">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" style="background-color: black;">
+                                <img src="img/bang-size-helios_1024x1024.png" alt="" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                        href="#">
+                        Size 18cm
+                    </a>
+                    <a class="ms-4 link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                        href="#">
+                        Size 20cm
+                    </a>
+
+                </div>
+                <form class="row mt-3">
+                    <div class="col-md-3">
+                        <input type="number" min="1" value="1" class="form-control" id="inputNumber"
+                            placeholder="Số lượng" ng-model="sanpham.quantity">
+                    </div>
+                    <div class="col-md-9">
+                        <button type="submit" class="btn btn-light mb-3 " ng-click="mua(sanpham)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+                </form>
+                <p>
+                    Tên sản phẩm: Vòng tay bạc S925 Angel Silver Helios Silver Original
+                    <br><br>
+                    Chất liệu: Bạc S925
+                    <br><br>
+                    Loại đá sử dụng: Không
+                    <br><br>
+                    Thương hiệu: HELIOS
+                    <br><br>
+                    Bảo hành: Theo chính sách bảo hành và nhận đánh sáng sản phẩm trọn đời
+                    <br><br>
+                    Câu chuyện từ nhà thiết kế: Từ hàng ngàn năm về trước, hình ảnh thiên sứ đã gắn liền với trí tưởng
+                    tượng và đức tin của nhân loại.
+                    <br><br>
+                    Trong Kinh Thánh, họ được mô tả như sứ giả của Thượng Đế, là những người mang thông điệp quan trọng
+                    từ thiên đàng xuống trái đất.
+                    <br><br>
+                    Thiên sứ thường mang hình hài đứa trẻ, với đôi cánh trắng muốt tượng trưng cho sự thuần khiết và tốt
+                    lành.
+                    <br><br>
+                    Không chỉ thể hiện sự kết nối giữa con người và thần thánh, họ còn là hiện thân cho sự chỉ đường dẫn
+                    lối trên hành trình cuộc sống.
+                    <br><br>
+                    Khi con người mất phương hướng hay bị thách thức bởi những cám dỗ, thiên sứ sẽ xuất hiện, dùng ánh
+                    hào quang để gợi ý con đường đi đến sự tốt đẹp.
+                    <br><br>
+                    Cảm hứng từ đó, Helios tạo nên vòng tay Angel, với ý nghĩa nó sẽ luôn định hướng người đàn ông tới
+                    những giá trị cao quý.
+                    <br><br>
+                    Xem chi tiết sản phẩm
+                </p>
+            </div>
+        </div>
+        <!-- Phản hồi từ khách hàng -->
+        <div class="p-5">
+            <h4>Phản hồi từ khách hàng</h4>
+            <form action="" class="text-center mx-auto" style="width: 600px;">
+                <h4>Viết đánh giá</h4>
+                <p>xếp hạng</p>
+                <p><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Tiêu đề đánh giá (100)</label>
+                    <input type="text" class="form-control bg-black text-white" id="formGroupExampleInput"
+                        placeholder="Hãy viết tiêu đề của bạn">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Xem trước</label>
+                    <textarea class="form-control  bg-black text-white" placeholder="Viết bình luận của bạn ở đây"
+                        id="formGroupExampleInput2" style="height: 100px"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInpu3" class="form-label">HÌNH ẢNH/VIDEO (TÙY CHỌN)</label>
+                    <input type="file" class="form-control bg-black text-white" id="formGroupExampleInpu4"
+                        placeholder="Hãy viết tiêu đề của bạn">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput4" class="form-label">Tên</label>
+                    <input type="text" class="form-control bg-black text-white" id="formGroupExampleInput4"
+                        placeholder="Hãy viết tiêu đề của bạn">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Email</label>
+                    <input type="email" class="form-control bg-black text-white" id="formGroupExampleInput"
+                        placeholder="Hãy viết tiêu đề của bạn">
+                </div>
+                <button type="button" class="btn btn-outline-light btn-lg">Gửi nhận xét</button>
+            </form>
+        </div>
+        <!-- sản phẩm có thể thích -->
+        <div class="p-5">
+            <h4>You may also like</h4>
+            <div id="carouselBlog" class="carousel slide">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active  ">
+                        <div class="justify-content-center align-items-center d-flex">
+
+                            <div class="card card-sp h-100" style="background-color: black; color: white;">
+                                <img src="img/sp2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mặt Dây Chuyền Bạc S925 Anubis Helios</h5>
+                                    <p class="card-text">From 999.000<sup>đ</sup></p>
+                                    <p class="card-text text-center"> <button type="button"
+                                            class="btn btn-outline-light w-100">ADD TO CART</button></p>
+                                </div>
+                            </div>
+                            <div class="card card-sp h-100" style="background-color: black; color: white;">
+                                <img src="img/sp2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mặt Dây Chuyền Bạc S925 Anubis Helios</h5>
+                                    <p class="card-text">From 999.000<sup>đ</sup></p>
+                                    <p class="card-text text-center"> <button type="button"
+                                            class="btn btn-outline-light w-100">ADD TO CART</button></p>
+                                </div>
+                            </div>
+                            <div class="card card-sp h-100" style="background-color: black; color: white;">
+                                <img src="img/sp2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mặt Dây Chuyền Bạc S925 Anubis Helios</h5>
+                                    <p class="card-text">From 999.000<sup>đ</sup></p>
+                                    <p class="card-text text-center"> <button type="button"
+                                            class="btn btn-outline-light w-100">ADD TO CART</button></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="justify-content-center align-items-center d-flex">
+                            <div class="card card-sp h-100" style="background-color: black; color: white;">
+                                <img src="img/sp3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Icon set</h5>
+                                    <p class="card-text">199.000<sup>đ</sup></p>
+                                    <p class="card-text text-center"> <button type="button"
+                                            class="btn btn-outline-light w-100">ADD TO CART</button></p>
+                                </div>
+                            </div>
+                            <div class="card card-sp h-100" style="background-color: black; color: white;">
+                                <img src="img/sp3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Icon set</h5>
+                                    <p class="card-text">199.000<sup>đ</sup></p>
+                                    <p class="card-text text-center"> <button type="button"
+                                            class="btn btn-outline-light w-100">ADD TO CART</button></p>
+                                </div>
+                            </div>
+                            <div class="card card-sp h-100" style="background-color: black; color: white;">
+                                <img src="img/sp3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Icon set</h5>
+                                    <p class="card-text">199.000<sup>đ</sup></p>
+                                    <p class="card-text text-center"> <button type="button"
+                                            class="btn btn-outline-light w-100">ADD TO CART</button></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item  ">
+                        <div class="justify-content-center align-items-center d-flex">
+                            <div class="card card-sp h-100" style="background-color: black; color: white;">
+                                <img src="img/sp4.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Icon set</h5>
+                                    <p class="card-text">199.000<sup>đ</sup></p>
+                                    <p class="card-text text-center"> <button type="button"
+                                            class="btn btn-outline-light w-100">ADD TO CART</button></p>
+                                </div>
+                            </div>
+                            <div class="card card-sp h-100" style="background-color: black; color: white;">
+                                <img src="img/sp5.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Icon set</h5>
+                                    <p class="card-text">199.000<sup>đ</sup></p>
+                                    <p class="card-text text-center"> <button type="button"
+                                            class="btn btn-outline-light w-100">ADD TO CART</button></p>
+                                </div>
+                            </div>
+                            <div class="card card-sp h-100" style="background-color: black; color: white;">
+                                <img src="img/sp6.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Icon set</h5>
+                                    <p class="card-text">199.000<sup>đ</sup></p>
+                                    <p class="card-text text-center"> <button type="button"
+                                            class="btn btn-outline-light w-100">ADD TO CART</button></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBlog" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBlog" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/6689c10aee.js" crossorigin="anonymous"></script>
+
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

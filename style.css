@@ -1,0 +1,112 @@
+.dropdown-menu_nav {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: none;
+    border-radius: 0;
+    padding: 0.7em;
+}
+
+@media only screen and (min-width: 992px) {
+    .dropdown_nav:hover .dropdown-menu_nav {
+        display: flex;
+    }
+
+    .dropdown-menu_nav.show {
+        display: flex;
+    }
+}
+
+.dropdown-menu_nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menu_nav li .dropdown-item_nav {
+    color: gray;
+    font-size: 1em;
+    padding: 0.5em 1em;
+}
+
+.dropdown-menu_nav li .dropdown-item_nav:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu_nav li:first-child a {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.dropdown-menu_nav li:first-child a:hover {
+    background-color: #f1f1f1;
+}
+
+@media only screen and (max-width: 992px) {
+    .dropdown-menu_nav.show {
+        flex-wrap: wrap;
+        max-height: 350px;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1140px) {
+    .dropdown_nav:hover .dropdown-menu_nav {
+        width: 40vw;
+        flex-wrap: wrap;
+    }
+}
+
+.nav-item>a {
+    color: white;
+    font-size: larger;
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-gift {
+    font-weight: bold;
+    font-size: 1.2em !important;
+    text-transform: uppercase;
+
+}
+
+/* card danh mục */
+.card-danhmuc,
+.card-sp {
+    transition: all 0.3s;
+}
+
+.card-danhmuc:hover,
+.card-sp:hover {
+    transform: scale(1.03);
+    opacity: 0.85;
+}
+
+.card-danhmuc:hover a {
+    display: inline-block !important;
+}
+
+.list-group-item {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.accordion-button.collapsed::after {
+    background-color: #f1f1f1;
+}
+::placeholder {
+    color: white !important;
+
+}
+th,
+tr,
+td {
+    background-color: black !important;
+    color: #f1f1f1 !important;
+}
+.page-link {
+    color: white;
+    background-color: pink;
+    border-color: black;
+}

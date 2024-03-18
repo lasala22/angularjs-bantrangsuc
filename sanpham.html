@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đỗ Gia Huy-PS26598</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    
+        <!-- slider -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="img/banner_fansi_VN_1950x.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="img/banner_web_32947063-9a9b-4c0b-a6dc-8fae483cc3c4.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="img/vietdevils_desktop-1950x866_1950x.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Main -->
+        <div class="p-5 row">
+            <!-- bộ lọc -->
+            <div class="col-md-3 col-6">
+                <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item  mb-4" style="background-color: black; color: white;">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne"
+                                style="background-color: black; color: white;">
+                                Giá
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="number" class="form-control form-control-lg bg-black text-white" placeholder="₫ TỪ"
+                                            aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                        <input type="number" class="form-control form-control-lg bg-black text-white" placeholder="₫ ĐẾN"
+                                            aria-label="Last name">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-3"><button type="button" class="btn w-50 btn-outline-light">ÁP
+                                        DỤNG</button></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item  mb-4" style="background-color: black; color: white;">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo"
+                                style="background-color: black; color: white;">
+                                Loại sản phẩm
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show ">
+                            <div class="">
+                                <ul class="list-group ">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="firstCheckbox">
+                                        <label class="form-check-label" for="firstCheckbox">Dây chuyền bạc S925</label>
+                                        <span class="badge bg-primary rounded-pill float-end bg-black">14</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="secondCheckbox">
+                                        <label class="form-check-label" for="secondCheckbox">Khuyên tai bạc S925</label>
+                                        <span class="badge bg-primary rounded-pill float-end bg-black">5</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="thirdCheckbox">
+                                        <label class="form-check-label" for="thirdCheckbox">Mặt Dây chuyền bạc
+                                            S925</label>
+
+                                        <span class="badge bg-primary rounded-pill float-end bg-black">20</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-4" style="background-color: black; color: white;">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree"
+                                style="background-color: black; color: white;">
+                                Cỡ
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                            <div class="">
+                                <ul class="list-group ">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="firstCheckbox">
+                                        <label class="form-check-label" for="firstCheckbox">Size 50cm</label>
+                                        <span class="badge bg-primary rounded-pill float-end bg-black">4</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="secondCheckbox">
+                                        <label class="form-check-label" for="secondCheckbox">Size 55cm</label>
+                                        <span class="badge bg-primary rounded-pill float-end bg-black">5</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="thirdCheckbox">
+                                        <label class="form-check-label" for="thirdCheckbox">Size 60cm</label>
+
+                                        <span class="badge bg-primary rounded-pill float-end bg-black">16</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- danh sách sản phẩm -->
+            <div class="col-md-9 col-6">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col" ng-repeat="sp in dsSP | filter:keyword:false | limitTo : limit : start">
+                        <div class="card card-sp h-100" style="background-color: black; color: white;">
+                            <img src="img/{{sp.hinh[0]}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#!detail/{{sp.id}}" style="text-decoration: none;" class="text-info"><p class="card-title">{{sp.ten}}</p></a>
+                                <p class="card-text">{{sp.gia | number : 0}} <sup>đ</sup></p>
+                                <p class="card-text text-center"> <button type="button"
+                                    class="btn btn-outline-light w-100" ng-click="mua(sp)">ADD TO CART</button></p>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav> -->
+
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item {{(page == 1)?'disabled':''}}">
+                        <button class="page-link"  aria-label="Previous" ng-click="showPage(page-1)">
+                          <span aria-hidden="true">&laquo;</span>
+                        </button>
+                      </li>
+                      <li ng-repeat="p in numberOfPage" class="page-item {{(page == p+1)?'active':''}}"><button class="page-link"  ng-click="showPage(p+1)">{{p+1}}</button></li>
+                      
+                      <li class="page-item {{(page == totalPage)?'disabled':''}}">
+                        <button class="page-link"  aria-label="Next" ng-click="showPage(page+1)">
+                          <span aria-hidden="true">&raquo;</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+        
+    
+
+
+
+    <script src="https://kit.fontawesome.com/6689c10aee.js" crossorigin="anonymous"></script>
+
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

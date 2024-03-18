@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đỗ Gia Huy-PS26598</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid text-white" style="background-color: black;" ng-app="myapp" ng-controller="myctrl">
+        <!-- thông báo -->
+        <div class="announcement text-center py-3">
+            MIỄN PHÍ GIAO HÀNG TẬN NƠI TRÊN TOÀN QUỐC
+        </div>
+        <!-- navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg " style="background-color: black;" data-bs-theme="dark">
+            <div class="container-fluid  ">
+                <a class="navbar-brand" href="#!trangchu">
+                    <img src="img/logo_500x.webp" alt="LogoHelios" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse justify-content-center navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-underline mb-2 mb-lg-0">
+                        <li class="nav-item dropdown dropdown_nav">
+                            <a class="nav-link" href="#!sanpham" role="button" aria-expanded="false">
+                                JEWELRY
+                            </a>
+                            <div class="dropdown-menu dropdown-menu_nav" aria-labelledby="navbarDropdown">
+                                <ul>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">VÒNG TAY</a></li>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">VÒNG TAY BẠC
+                                            S925</a></li>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">VÒNG TAY THỜI
+                                            TRANG</a></li>
+
+                                </ul>
+                                <ul>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">NHẪN</a></li>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">NHẪN BẠC NAM</a>
+                                    </li>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">NHẪN THỜI TRANG</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">DÂY CHUYỀN</a></li>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">DÂY CHUYỀN BẠC
+                                            S925</a></li>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">MẶT DÂY CHUYỀN BẠC
+                                            S925</a>
+                                    </li>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">DÂY CHUYỀN THỜI
+                                            TRANG</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">KHUYÊN TAI</a></li>
+                                    <li><a class="dropdown-item dropdown-item_nav" href="#!sanpham">KHUYÊN TAI BẠC
+                                            NAM</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown dropdown_nav">
+                            <a class="nav-link" href="#!sanpham" role="button" aria-expanded="false">
+                                GIFT
+                            </a>
+                            <div class="dropdown-menu dropdown-menu_nav" aria-labelledby="navbarDropdown">
+                                <ul>
+                                    <li><a class="dropdown-item dropdown-item_nav " href="#!sanpham">QUÀ TẶNG CHO
+                                            NAM</a></li>
+                                    <li><a class="dropdown-item dropdown-item_nav dropdown-gift" href="#!sanpham">QUÀ
+                                            TẶNG CHO
+                                            NỮ</a></li>
+                                    <li><a class="dropdown-item dropdown-item_nav dropdown-gift" href="#!sanpham">QUÀ
+                                            SINH
+                                            NHẬT</a></li>
+                                    <li><a class="dropdown-item dropdown-item_nav dropdown-gift"
+                                            href="#!sanpham">COUPLE</a>
+                                    </li>
+                                    <li><a class="dropdown-item dropdown-item_nav dropdown-gift" href="#!sanpham">QUÀ
+                                            TẶNG DOANH
+                                            NGHIỆP</a></li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!sanpham">SALE OFF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!sanpham">COLLECTION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!sanpham">ACCESSORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!sanpham">EYEWEAR</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <form class="d-flex" role="search">
+
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search"
+                        style="width: 150px;" ng-model="keyword">
+                    <button class="btn btn-outline-light me-2" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="#!giohang"><button class="btn btn-outline-light me-2" type="button"><i
+                                class="fa-solid fa-bag-shopping"></i></button></a>
+                    <div class="dropdown">
+                        <button class="btn  btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-regular fa-user"></i> Tài khoản
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#!dangnhap">Đăng nhập</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#!dangki">Đăng kí</a></li>
+                        </ul>
+                    </div>
+                </form>
+
+            </div>
+        </nav>
+        <!-- ng-view -->
+        <ng-view></ng-view>
+         <!-- Form thông tin -->
+         <div class="p-5">
+            <h1 class="text-center fs-1 fw-bold font-monospace">Đăng Ký Nhận Thông Tin Hữu Ích</h1>
+            <p class="text-center " style="color: grey;">Đăng ký nhận thông tin hữu ích từ chúng tôi để bạn CHẤT hơn bạn
+                của ngày hôm qua!</p>
+            <div class="d-flex form-floating mx-auto" style="width: 500px;">
+                <input type="email" class="form-control bg-dark" data-bs-theme="dark" id="floatingInput"
+                    placeholder="Email address">
+                <label for="floatingInput">Email address</label>
+                <button type="submit" class="btn btn-sm btn-light mx-3"><i
+                        class="fa-regular fa-paper-plane"></i>SEND</button>
+                <!-- <div class="col-12 text-center my-2">
+                    <button type="submit" class="btn btn-info mb-3">GỬI</button>
+                </div> -->
+            </div>
+            <img src="img/footer_img.webp" alt="" width="100%">
+        </div>
+        <!-- footer -->
+        <footer class="p-5 row">
+            <div class="col-md-3 col-6">
+                <h5>KẾT NỐI VỚI CHÚNG TÔI</h5><br>
+                <p>Helios là brand phụ kiện thành lập bởi những người có niềm đam mê với trang sức, yêu thích các chế
+                    tác được tạo ra từ đôi bàn tay thuần Việt, mong muốn đưa các tác phẩm vươn tầm thế giới.
+                    <br><br>
+                    CÔNG TY TNHH SUNROCK
+                    <br><br>
+                    Địa chỉ: Số 4, ngõ 104 Lê Thanh Nghị, Phường Bách Khoa, Quận Hai Bà Trưng, Thành phố Hà Nội, Việt
+                    Nam
+                    <br><br>
+                    Mã số thuế: 0109889605
+                    <br><br>
+                    Hotline hỗ trợ:
+                    <br><br>
+                    - Hà Nội: 0964.302.899
+                    <br><br>
+                    - Hồ Chí Minh: 0794.302.899
+                    <br><br>
+                    Phản Ánh Chất Lượng Dịch Vụ : 0981.956.116
+                    <br><br>
+                    Email: support@heliosjewels.vn
+                </p>
+
+                <img src="img/Bocongthuong.webp" alt="" width="60%">
+                <div class="d-flex">
+                    <i class="fa-brands fa-facebook-f m-3 fa-xl"></i>
+                    <i class="fa-brands fa-instagram m-3 fa-xl"></i>
+                    <i class="fa-brands fa-youtube m-3 fa-xl"></i>
+                    <i class="fa-brands fa-pinterest m-3 fa-xl"></i>
+                    <i class="fa-brands fa-tiktok m-3 fa-xl"></i>
+                </div>
+                <p><sub>© 2023 Heliosjewels.vn. All Rights Reserved.</sub></p>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5>CHĂM SÓC KHÁCH HÀNG</h5><br>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">HƯỚNG
+                        DẪN THANH TOÁN</a></p>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">GIAO
+                        HÀNG</a></p>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">CHÍNH
+                        SÁCH BẢO HÀNH</a></p>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">CHÍNH
+                        SÁCH ĐỔI TRẢ</a></p>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">CHÍNH
+                        SÁCH BẢO MẬT</a></p>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5>VỀ CHÚNG TÔI</h5><br>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">CÂU
+                        CHUYỆN CỦA HELIOS</a></p>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">HỆ
+                        THỐNG CỬA HÀNG</a></p>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">TUYỂN
+                        DỤNG</a></p>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">MEMBERSHIP
+                        BY HELIOS</a></p>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5>DÀNH CHO KHÁCH HÀNG</h5><br>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">TIN
+                        TỨC</a></p>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">KIẾN
+                        THỨC THỜI TRANG</a></p>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">HƯỚNG
+                        DẪN VÀ QUY TRÌNH AFFILIATE</a></p>
+                <p><a href="#"
+                        class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">HƯỚNG
+                        DẪN BẢO QUẢN SẢN PHẨM</a></p>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/6689c10aee.js" crossorigin="anonymous"></script>
+
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="helios.js"></script>
+</body>
+
+</html>
